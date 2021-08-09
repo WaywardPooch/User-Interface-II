@@ -134,11 +134,13 @@ table {
 
 /* Universal Selector */
 * {
-  /* border: solid 1px grey; */
+  border: solid 1px grey;
   box-sizing: border-box;
   margin: 0;
   max-width: 100%;
   padding: 0;
+
+  /*  */
 }
 
 /* ========== GENERAL ========== */
@@ -210,7 +212,7 @@ nav a {
   border: solid 1px var(--color-offblack, dimgrey);
   color: var(--color-offblack, dimgrey);
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 1% 3%;
   text-align: center;
   text-decoration: none;
@@ -232,6 +234,7 @@ nav a:hover {
   margin: auto;
   max-width: 1200px;
   padding: 1%;
+  width: 100%;
 }
 .container-split .container-split-left {
   padding: 1%;
@@ -307,4 +310,27 @@ footer {
 }
 /* Phone Formatting */
 @media (max-width: 500px) {
+  /* Header/Nav Area */
+  header h1 {
+    text-align: center;
+  }
+  nav {
+    align-items: center;
+    flex-direction: column;
+  }
+  nav a {
+    padding: 8px;
+    width: 50%;
+  }
+  /* Top Section */
+  .container-split {
+    flex-flow: row wrap;
+  }
+  .container-split .container-split-right,
+  .container-split .container-split-left {
+    width: 100%;
+  }
+  .container-split .container-split-right {
+    text-align: center;
+  }
 }
