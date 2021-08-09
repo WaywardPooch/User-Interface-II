@@ -174,10 +174,6 @@ button {
   margin: 16px 0;
   padding: 8px 24px;
 }
-.section-horizontal-divider {
-  margin-top: 16px;
-  width: 100%;
-}
 
 /* ========== HELPERS ========== */
 
@@ -242,8 +238,8 @@ nav a:hover {
 .container-split .container-split-left {
   align-self: center;
   justify-self: center;
+  margin-right: 28px;
   width: 50%;
-  margin-right: 26px;
 }
 .container-split .container-split-right {
   align-self: flex-end;
@@ -257,7 +253,10 @@ nav a:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: auto;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
   max-width: 1200px;
 }
 .container-gallery-grid-box {
@@ -333,8 +332,8 @@ footer {
     width: 100%;
   }
   .container-split .container-split-right {
-    text-align: center;
     margin-top: 16px;
+    text-align: center;
   }
   /* Middle Section */
   .container-gallery-grid-box {
