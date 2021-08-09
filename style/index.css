@@ -252,6 +252,7 @@ nav a:hover {
 .container-gallery-grid {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   margin: auto;
   max-width: 1200px;
   padding: 1%;
@@ -319,7 +320,7 @@ footer {
   }
   /* Middle Section */
   .container-gallery-grid-box {
-    width: 50%;
+    width: 33%;
   }
 }
 /* Phone Formatting */
@@ -343,5 +344,9 @@ footer {
   }
   .container-split .container-split-right {
     text-align: center;
+  }
+  /* Middle Section */
+  .container-gallery-grid-box {
+    width: 50%;
   }
 }
