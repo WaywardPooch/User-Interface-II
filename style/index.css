@@ -126,7 +126,8 @@ table {
   border-spacing: 0;
 }
 
-/* Global Variables for Color Scheme */
+/* ========== GLOBAL VARIABLES ========== */
+
 :root {
   --color-offblack: #303030;
 }
@@ -139,7 +140,9 @@ table {
   max-width: 100%;
   padding: 0;
 }
-/* General Styles */
+
+/* ========== GENERAL ========== */
+
 html {
   font-size: 62.5%;
 }
@@ -173,7 +176,24 @@ button {
   padding: 2% 7%;
 }
 
-/* Header Section Styles */
+/* ========== HELPERS ========== */
+
+/* Flexbox Order Classes */
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+.order-3 {
+  order: 3;
+}
+.order-4 {
+  order: 4;
+}
+
+/* ========== HEADER ========== */
+
 header {
   background-color: var(--color-offblack, dimgrey);
   padding: 2%;
@@ -205,7 +225,8 @@ nav a:hover {
   padding: 0 1%;
 }
 
-/* Top Section Styles */
+/* ========== TOP ========== */
+
 .container-split {
   display: flex;
   margin: auto;
@@ -222,7 +243,8 @@ nav a:hover {
   width: 50%;
 }
 
-/* Middle Section Styles */
+/* ========== MIDDLE/CONTENT ========== */
+
 .container-gallery-grid {
   display: flex;
   flex-flow: row wrap;
@@ -244,7 +266,8 @@ nav a:hover {
   text-align: center;
 }
 
-/* Footer Section Styles */
+/* ========== FOOTER ========== */
+
 footer {
   background-color: var(--color-offblack, dimgrey);
   padding: 2% 0;
@@ -275,4 +298,13 @@ footer {
 }
 .icon-social-media img:hover {
   border: solid 6px whitesmoke;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Tablet Formatting */
+@media (max-width: 800px) {
+}
+/* Phone Formatting */
+@media (max-width: 500px) {
 }
