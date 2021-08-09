@@ -1,90 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!-- Stylesheet Import -->
-        <link rel="stylesheet" href="/style/index.css">
+  <head>
+    <!-- Set Text Encoding Format -->
+    <meta charset="UTF-8" />
+    <!-- Allow Phone Browsers to Use Media Queries -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Import Web Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Import Stylesheet -->
+    <link rel="stylesheet" href="/style/index.css" />
+    <!-- Set Website Title -->
+    <title>Lance Turbes's Porfolio</title>
+  </head>
 
-        <!-- Google Fonts Import -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-        
-        <!-- Website Title -->
-        <title>Lance Turbes's Porfolio</title>
-    </head>
+  <body>
+    <!-- Navigation -->
+    <header id="home">
+      <div class="container-header">
+        <h1>Lance Turbes</h1>
+        <nav>
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/projects.html">Projects</a>
+        </nav>
+      </div>
+    </header>
 
-    <body>
-        <header id="home">
-            <div class="container-header">
-                <h1>Lance Turbes</h1>
-                <nav>
-                    <a href="/index.html">Home</a>
-                    <a href="/about.html">About</a>
-                    <a href="/contact.html">Contact</a>
-                    <a href="/projects.html">Projects</a>
-                </nav>
-            </div>
-        </header>
+    <!-- Featured Image/Description -->
+    <section id="about">
+      <div class="container-split">
+        <div class="container-split-left">
+          <img src="/assets/unsplash-iceland-canyon.jpg" />
+        </div>
+        <div class="container-split-right">
+          <h2>Lance Turbes</h2>
+          <button type="button" onclick="location.href='/projects.html'">
+            My Projects
+          </button>
+          <p>
+            A student at Lambda School, I'm an aspiring web developer in
+            training. I've always been amazed that the internet even exists in
+            the first place, and I'm hopeful I'll one day be adding meaningful
+            content to it, all from scratch!
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <section id="about">
-            <div class="container-split">
-                <div class="container-split-left">
-                    <img src="/assets/unsplash-iceland-canyon.jpg"/>
-                </div>
-                <div class="container-split-right">
-                    <h2>Lance Turbes</h2>
-                    <button type="button" onclick="location.href='/projects.html'">My Projects</button>
-                    <p>A student at Lambda School, I'm an aspiring web developer in training. I've always been amazed that the internet even exists in the first place, and I'm hopeful I'll one day be adding meaningful content to it, all from scratch!</p>
-                </div>
-            </div>
-        </section>
+    <!-- Gallery/Showcase Area -->
+    <section id="projects" class="container-gallery-grid">
+      <div class="container-gallery-grid-box">
+        <img src="https://picsum.photos/400/400?random=1.jpg" />
+        <p class="container-gallery-grid-caption">Here is a Caption</p>
+      </div>
+      <div class="container-gallery-grid-box">
+        <img src="https://picsum.photos/400/400?random=2.jpg" />
+        <p class="container-gallery-grid-caption">Here is a Caption</p>
+      </div>
+      <div class="container-gallery-grid-box">
+        <img src="https://picsum.photos/400/400?random=3.jpg" />
+        <p class="container-gallery-grid-caption">Here is a Caption</p>
+      </div>
+      <div class="container-gallery-grid-box">
+        <img src="https://picsum.photos/400/400?random=4.jpg" />
+        <p class="container-gallery-grid-caption">Here is a Caption</p>
+      </div>
+      <div class="container-gallery-grid-box">
+        <img src="https://picsum.photos/400/400?random=5.jpg" />
+        <p class="container-gallery-grid-caption">Here is a Caption</p>
+      </div>
+      <div class="container-gallery-grid-box">
+        <img src="https://picsum.photos/400/400?random=6.jpg" />
+        <p class="container-gallery-grid-caption">Here is a Caption</p>
+      </div>
+      <div class="container-gallery-grid-box">
+        <img src="https://picsum.photos/400/400?random=7.jpg" />
+        <p class="container-gallery-grid-caption">Here is a Caption</p>
+      </div>
+      <div class="container-gallery-grid-box">
+        <img src="https://picsum.photos/400/400?random=8.jpg" />
+        <p class="container-gallery-grid-caption">Here is a Caption</p>
+      </div>
+    </section>
 
-        <section id="projects" class="container-gallery-grid">
-            <div class="container-gallery-grid-box">
-                <img src="https://picsum.photos/400/400.jpg" />
-                <p class="container-gallery-grid-caption">Here is a Caption</p>
-            </div>
-            <div class="container-gallery-grid-box">
-                <img src="https://picsum.photos/400/400.jpg" />
-                <p class="container-gallery-grid-caption">Here is a Caption</p>
-            </div>
-            <div class="container-gallery-grid-box">
-                <img src="https://picsum.photos/400/400.jpg" />
-                <p class="container-gallery-grid-caption">Here is a Caption</p>
-            </div>
-            <div class="container-gallery-grid-box">
-                <img src="https://picsum.photos/400/400.jpg" />
-                <p class="container-gallery-grid-caption">Here is a Caption</p>
-            </div>
-            <div class="container-gallery-grid-box">
-                <img src="https://picsum.photos/400/400.jpg" />
-                <p class="container-gallery-grid-caption">Here is a Caption</p>
-            </div>
-            <div class="container-gallery-grid-box">
-                <img src="https://picsum.photos/400/400.jpg" />
-                <p class="container-gallery-grid-caption">Here is a Caption</p>
-            </div>
-            <div class="container-gallery-grid-box">
-                <img src="https://picsum.photos/400/400.jpg" />
-                <p class="container-gallery-grid-caption">Here is a Caption</p>
-            </div>
-            <div class="container-gallery-grid-box">
-                <img src="https://picsum.photos/400/400.jpg" />
-                <p class="container-gallery-grid-caption">Here is a Caption</p>
-            </div>
-        </section>
-
-        <footer id="contact">
-            <div class="container-footer">
-                <h2>Like what you see?</h2>
-                <button type="button" onclick="location.href='/contact.html'">Contact Me</button>
-                <div class="container-social-media">
-                    <img onclick="location.href='https://store.steampowered.com/'" class="icon-social-media" src="/assets/icons/steam-logo.png"/>
-                </div>
-            </div>
-        </footer>
-    </body>
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container-footer">
+        <h2>Like what you see?</h2>
+        <button type="button" onclick="location.href='/contact.html'">
+          Contact Me
+        </button>
+        <div class="container-social-media"></div>
+      </div>
+    </footer>
+  </body>
 </html>

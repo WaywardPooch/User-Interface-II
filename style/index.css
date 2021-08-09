@@ -4,195 +4,355 @@
 
    CSS Reset
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	/* border: 0; */
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-/* Global Variables for Color Scheme */
+/* ========== GLOBAL VARIABLES ========== */
+
 :root {
-    --color-offblack: #303030;
+  --color-offblack: #303030;
 }
 
 /* Universal Selector */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    max-width: 100%;
-    /* border: solid 1px grey; */
-
+  /* border: solid 1px grey; */
+  box-sizing: border-box;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
 }
-/* General Styles */
+
+/* ========== GENERAL ========== */
+
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 body {
-    line-height: 1.5;
-    background-color: whitesmoke;
+  background-color: whitesmoke;
+  line-height: 1.5;
 }
-h1, h2 {
-    font-family: 'Oswald', sans-serif;
-    padding: 2% 0;
-    text-transform: uppercase;
-    color: var(--color-offblack, dimgrey);
+h1,
+h2 {
+  color: var(--color-offblack, dimgrey);
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 }
 h1 {
-    color: whitesmoke;
-    font-size: 5rem;
+  color: whitesmoke;
+  font-size: 5rem;
 }
 h2 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    color: var(--color-offblack, dimgrey);
+  color: var(--color-offblack, dimgrey);
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
 }
 button {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    margin: 3% 0;
-    padding: 2% 7%;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  margin: 16px 0;
+  padding: 8px 24px;
 }
 
-/* Header Section Styles */
+/* ========== HELPERS ========== */
+
+/* Flexbox Order Classes */
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+.order-3 {
+  order: 3;
+}
+.order-4 {
+  order: 4;
+}
+
+/* ========== HEADER ========== */
+
 header {
-    background-color: var(--color-offblack, dimgrey);;
-    padding: 2%;
+  background-color: var(--color-offblack, dimgrey);
+  padding: 12px 24px 32px;
 }
 header h1 {
-    padding: 2% 1%;
+  padding: 8px 0;
 }
 nav {
-    display: flex;
-    padding: 0 3%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 12px;
 }
 nav a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    color: var(--color-offblack, dimgrey);;
-    background-color: white;
-    padding: 1% 3%;
-    text-align: center;
-    text-decoration: none;
-    border: solid 1px var(--color-offblack, dimgrey);;
+  background-color: white;
+  border: solid 1px var(--color-offblack, dimgrey);
+  color: var(--color-offblack, dimgrey);
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  padding: 6px 0;
+  text-align: center;
+  text-decoration: none;
+  width: 160px;
 }
 nav a:hover {
-    background-color: coral;
-    color: whitesmoke;
+  background-color: coral;
+  color: whitesmoke;
 }
 .container-header {
-    margin: auto;
-    max-width: 1200px;
-    padding: 0 1%;
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 8px;
 }
 
-/* Top Section Styles */
+/* ========== TOP ========== */
+
 .container-split {
-    display: flex;
-    margin: auto;
-    max-width: 1200px;
-    padding: 1%;
+  display: flex;
+  margin: auto;
+  max-width: 1200px;
+  padding: 16px;
+  width: 100%;
 }
 .container-split .container-split-left {
-    padding: 1%;
-    width: 50%;
+  align-self: center;
+  justify-self: center;
+  margin-right: 28px;
+  width: 50%;
 }
 .container-split .container-split-right {
-    align-self: flex-end;
-    padding: 1% 5%;
-    width: 50%;
+  align-self: flex-end;
+  padding: 0 5%;
+  width: 50%;
 }
 
-/* Middle Section Styles */
+/* ========== MIDDLE/CONTENT ========== */
+
 .container-gallery-grid {
-    display: flex;
-    flex-flow: row wrap;
-    margin: auto;
-    max-width: 1200px;
-    padding: 1%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  max-width: 1200px;
 }
 .container-gallery-grid-box {
-    width: 25%;
+  justify-content: center;
+  padding: 4px 16px;
+  width: 25%;
 }
 .container-gallery-grid-box img {
-    height: 280px;
-    object-fit: cover;
-    overflow: hidden;
-    padding: 4%;
+  justify-self: center;
+  max-width: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 .container-gallery-grid-caption {
-    padding: 5%;
-    text-align: center;
+  padding: 5%;
+  text-align: center;
 }
 
-/* Footer Section Styles */
+/* ========== FOOTER ========== */
+
 footer {
-    background-color: var(--color-offblack, dimgrey);;
-    padding: 2% 0;
+  background-color: var(--color-offblack, dimgrey);
+  padding: 32px 0;
 }
 .container-footer {
-    margin: auto;
-    max-width: 1200px;
-    text-align: center;
+  margin: auto;
+  max-width: 1200px;
+  text-align: center;
 }
 .container-footer button {
-    background-color: whitesmoke;
-    color: var(--color-offblack, dimgrey);;
-    margin: 1%;
-    padding: 1% 2%;
-    border: none;
+  background-color: whitesmoke;
+  border: none;
+  color: var(--color-offblack, dimgrey);
+  padding: 16px 32px;
 }
 .container-footer h2 {
-    color: whitesmoke;
-    margin: 0;
-    padding: 1%;
+  color: whitesmoke;
+  margin: 0;
+  padding: 16px;
 }
 .icon-social-media {
-    object-fit: cover;
-    height: 64px;
+  height: 64px;
+  object-fit: cover;
 }
 .icon-social-media img {
-    background-color: var(--color-offblack);
+  background-color: var(--color-offblack);
 }
 .icon-social-media img:hover {
-    border: solid 6px whitesmoke;
+  border: solid 6px whitesmoke;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Tablet Formatting */
+@media (max-width: 800px) {
+  /* Header/Nav Area */
+  header h1 {
+    text-align: center;
+  }
+  nav {
+    justify-content: center;
+  }
+  nav a {
+    width: 25%;
+  }
+  /* Top Section */
+  .container-split {
+    flex-flow: row wrap;
+  }
+  .container-split .container-split-right,
+  .container-split .container-split-left {
+    margin: 0;
+    width: 100%;
+  }
+  .container-split .container-split-right {
+    margin-top: 16px;
+    text-align: center;
+  }
+  /* Middle Section */
+  .container-gallery-grid-box {
+    width: 33%;
+  }
+}
+/* Phone Formatting */
+@media (max-width: 500px) {
+  /* Header/Nav Area */
+  nav {
+    margin: auto;
+    width: 200px;
+  }
+  nav a {
+    padding: 8px;
+    width: 100%;
+  }
+  /* Middle Section */
+  .container-gallery-grid-box {
+    width: 50%;
+  }
 }
