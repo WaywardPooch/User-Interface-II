@@ -174,6 +174,10 @@ button {
   margin: 16px 0;
   padding: 8px 24px;
 }
+.section-horizontal-divider {
+  margin-top: 16px;
+  width: 100%;
+}
 
 /* ========== HELPERS ========== */
 
@@ -195,7 +199,7 @@ button {
 
 header {
   background-color: var(--color-offblack, dimgrey);
-  padding: 8px;
+  padding: 12px 24px 32px;
 }
 header h1 {
   padding: 8px 0;
@@ -211,10 +215,10 @@ nav a {
   color: var(--color-offblack, dimgrey);
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
-  padding: 8px 0;
+  padding: 6px 0;
   text-align: center;
   text-decoration: none;
-  width: 120px;
+  width: 160px;
 }
 nav a:hover {
   background-color: coral;
@@ -232,18 +236,18 @@ nav a:hover {
   display: flex;
   margin: auto;
   max-width: 1200px;
-  padding: 1%;
+  padding: 16px;
   width: 100%;
 }
 .container-split .container-split-left {
   align-self: center;
   justify-self: center;
-  padding: 1%;
   width: 50%;
+  margin-right: 26px;
 }
 .container-split .container-split-right {
   align-self: flex-end;
-  padding: 1% 5%;
+  padding: 0 5%;
   width: 50%;
 }
 
@@ -255,10 +259,10 @@ nav a:hover {
   justify-content: center;
   margin: auto;
   max-width: 1200px;
-  padding: 1%;
 }
 .container-gallery-grid-box {
   justify-content: center;
+  padding: 4px 16px;
   width: 25%;
 }
 .container-gallery-grid-box img {
@@ -266,7 +270,6 @@ nav a:hover {
   max-width: 100%;
   object-fit: cover;
   overflow: hidden;
-  padding: 4%;
 }
 .container-gallery-grid-caption {
   padding: 5%;
@@ -277,7 +280,7 @@ nav a:hover {
 
 footer {
   background-color: var(--color-offblack, dimgrey);
-  padding: 2% 0;
+  padding: 32px 0;
 }
 .container-footer {
   margin: auto;
@@ -288,13 +291,12 @@ footer {
   background-color: whitesmoke;
   border: none;
   color: var(--color-offblack, dimgrey);
-  margin: 1%;
-  padding: 1% 2%;
+  padding: 16px 32px;
 }
 .container-footer h2 {
   color: whitesmoke;
   margin: 0;
-  padding: 1%;
+  padding: 16px;
 }
 .icon-social-media {
   height: 64px;
@@ -327,10 +329,12 @@ footer {
   }
   .container-split .container-split-right,
   .container-split .container-split-left {
+    margin: 0;
     width: 100%;
   }
   .container-split .container-split-right {
     text-align: center;
+    margin-top: 16px;
   }
   /* Middle Section */
   .container-gallery-grid-box {
